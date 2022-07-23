@@ -1,10 +1,11 @@
-### Exp Nim
+# Exp Nim
+
+### Build
 
 ```
 nim c main.nim
 ./main
 ```
-
 
 ### Docker
 
