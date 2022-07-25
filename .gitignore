@@ -1,1 +1,11 @@
 main
+
+# c.
+test.o
+
+# cache
+nim-cache
+
+# nim source.
+v1.6.6.zip
+Nim-1.6.6
