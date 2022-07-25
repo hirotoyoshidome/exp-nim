@@ -26,5 +26,5 @@ nim c --noMain --noLinking --header --nimcache:nim-cache lib.nim
 # not working
 wget https://github.com/nim-lang/Nim/archive/refs/tags/v1.6.6.zip
 unzip v1.6.6.zip
-gcc -w -I ./nim-cache/ -I ./Nim-1.6.6/lib/ test.c -o test.o
+gcc -w -I ./Nim-1.6.6/lib/ -I ./nim-cache/ ./nim-cache/*.c  test.c -o test.o
 ```

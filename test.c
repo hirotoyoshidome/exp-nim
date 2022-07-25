@@ -4,12 +4,12 @@
 // wrap.
 void callNimProcTest()
 {
-    // TODO 動いていない
     // Nimの初期化
     NimMain();
 
     // 呼び出し
-    // helloWorld();
+    char* hello = helloWorld();
+    printf("%s\n", hello);
 }
 
 int main()
