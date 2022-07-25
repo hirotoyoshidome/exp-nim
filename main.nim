@@ -1,4 +1,6 @@
 import std/sequtils
+import macros
+import helloMacro
 
 # 基本構文(ほぼPython)
 
@@ -125,3 +127,26 @@ type
 var sbi:SubInt = 0
 # エラーになる
 # var sbi2:SubInt = 6
+
+# AST = 抽象構文木
+# Nimの構文がどういうASTとして構築されるか（コンパイル時に出力される）
+dumpTree:
+    echo "hello"
+
+# ASTの記述方法を表示（コンパイル時に出力される）
+dumpAstGen:
+    echo "hello"
+
+# ASTノードをツリー形式にして出力（コンパイル時に出力される）
+# staticはコンパイル時に実行する時に利用
+static:
+    let astStr = nnkStmtList.newTree(
+        nnkCommand.newTree(
+            newIdentNode("echo"),
+            newLit("hello")
+        )
+    ).treeRepr
+    echo astStr
+
+# 別ファイルのマクロ呼び出し
+helloMacro()
