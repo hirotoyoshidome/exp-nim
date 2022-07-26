@@ -9,3 +9,6 @@ nim-cache
 # nim source.
 v1.6.6.zip
 Nim-1.6.6
+
+# nimble build.
+bin
