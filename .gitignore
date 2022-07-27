@@ -1,7 +1,7 @@
-main*
-!main1.*
-!main2.*
-!main3.*
+main
+main2
+main3
+main4.so
 
 myCheckNetwork
 

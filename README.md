@@ -41,3 +41,11 @@ nimble build
 # test
 nimble test
 ```
+
+### nimpy
+
+```
+nimble install nimpy
+nim c --app:lib --out:main4.so --threads:on main4.nim
+python3 main.py
+```
