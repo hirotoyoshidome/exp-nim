@@ -49,4 +49,13 @@ proc main() =
     else:
         echo "unknown val"
 
+    # Enum
+    type
+        Direction = enum
+            north, south, east, west
+    # not string.
+    var d: Direction = south
+    echo d
+    echo type(d)
+
 main()
